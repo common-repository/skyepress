@@ -1,0 +1,926 @@
+/**********************************************/
+/* Fonts
+/**********************************************/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,800);
+
+@font-face {
+    font-family: 'Social Pug';
+    src:url('../fonts/socialpug.eot?gd6mr8');
+    src:url('../fonts/socialpug.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/socialpug.woff') format('woff'),
+        url('../fonts/socialpug.ttf') format('truetype'),
+        url('../fonts/socialpug.svg#socialpug') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="skp-icon-"]:before, [class*=" skp-icon-"]:before {
+  font-family: "Social Pug";
+  font-style: normal;
+  font-weight: normal;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+}
+
+.skp-icon-ok:before { content: '\e880'; }
+.skp-icon-remove:before { content: '\e881'; }
+.skp-icon-edit:before { content: '\e882'; }
+.skp-icon-share:before { content: '\e883'; }
+.skp-icon-facebook_profile:before { content: '\e800'; }
+.skp-icon-facebook_page:before { content: '\e800'; }
+.skp-icon-twitter:before { content: '\e801'; }
+.skp-icon-google-plus:before { content: '\e802'; }
+.skp-icon-pinterest:before { content: '\e803'; }
+.skp-icon-linkedin_profile:before { content: '\e804'; }
+.skp-icon-linkedin_page:before { content: '\e804'; }
+.skp-icon-stumbleupon:before { content: '\e805'; }
+.skp-icon-reddit:before { content: '\e806'; }
+.skp-icon-vkontakte:before { content: '\e807'; }
+.skp-icon-whatsapp:before { content: '\e808'; }
+.skp-icon-instagram:before { content: '\e809'; }
+.skp-icon-youtube:before { content: '\e810'; }
+.skp-icon-vimeo:before { content: '\e811'; }
+.skp-icon-soundcloud:before { content: '\e812'; }
+.skp-icon-twitch:before { content: '\e813'; }
+.skp-icon-behance:before { content: '\e814'; }
+.skp-icon-yummly:before { content: '\e815'; }
+.skp-icon-email:before { content: '\e816'; }
+.skp-icon-print:before { content: '\e817'; }
+.skp-icon-pocket:before { content: '\e819'; }
+.skp-icon-buffer:before { content: '\e820'; }
+.skp-icon-tumblr:before { content: '\e821'; }
+
+/**********************************************/
+/* Grid System
+/**********************************************/
+[class*="skp-col-"] { float: left; padding: 5px; -moz-box-sizing: border-box; box-sizing: border-box; }
+.skp-row { margin: 0 -5px; }
+.skp-row.skp-m-padding { margin: 0 -8px; }
+.skp-row.skp-m-padding [class*="skp-col-"] { padding: 8px; }
+.skp-row.skp-big-padding { margin: 0 -15px; }
+.skp-row.skp-big-padding [class*="skp-col-"] { padding: 15px; }
+.skp-row.skp-xl-padding { margin: 0 -25px; }
+.skp-row.skp-xl-padding [class*="skp-col-"] { padding: 25px; }
+
+.skp-col-1-1 { width: 100%; }
+.skp-col-1-2 { width: 50%; }
+.skp-col-1-3 { width: 33.3333%; }
+.skp-col-2-3 { width: 66.6666%; }
+.skp-col-1-4 { width: 25%; }
+.skp-col-3-4 { width: 75%; }
+.skp-col-1-5 { width: 20%; }
+.skp-col-2-5 { width: 40%; }
+.skp-col-3-5 { width: 60%; }
+.skp-col-4-5 { width: 80%; }
+
+.skp-row:after { content: ''; display: block; clear: both; }
+
+
+/**********************************************/
+/* Utility Classes
+/**********************************************/
+.skp-clear { content: ''; display: block; clear: both; }
+
+.skp-no-padding { padding: 0 !important; }
+.skp-no-padding-top { padding-top: 0 !important; }
+.skp-no-padding-right { padding-right: 0 !important; }
+.skp-no-padding-bottom { padding-bottom: 0 !important; }
+.skp-no-padding-left { padding-left: 0 !important; }
+
+
+/**********************************************/
+/* Admin Notices
+/**********************************************/
+.wrap div.skp-admin-notice { position: relative; margin-top: 16px; }
+.wrap div.skp-admin-notice.skp-serial-missing { border-color: rgba(52,152,219,0.75); }
+.wrap div.skp-admin-notice.skp-serial-missing .skp-get-license { margin-left: 10px; }
+
+.skp-admin-notice-activation a { text-decoration: none; }
+.skp-admin-notice-activation .skp-admin-notice-link { display: inline-block; padding: 6px 8px; margin-bottom: 10px; color: rgba(52,152,219,1); font-weight: 500; background: #e9e9e9; border-radius: 2px; margin-right: 10px; }
+.skp-admin-notice-activation .skp-admin-notice-link span { display: inline-block; text-decoration: none; margin-right: 10px; }
+.skp-admin-notice-activation .skp-admin-notice-link:hover { color: #fff; background: rgba(52,152,219,0.75); }
+
+
+/**********************************************/
+/* Nav Tabs
+/**********************************************/
+.skp-nav-tab { outline: 0; box-shadow: none !important; }
+.skp-tab { display: none; margin-top: 3em; }
+.skp-tab-active { display: block; }
+.skp-tab div > :first-child { margin-top: 0; }
+
+
+/**********************************************/
+/* Form Fields
+/**********************************************/
+.skp-form-field input[type=text],
+.skp-form-field textarea {
+    box-shadow: none;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
+
+.skp-form-field textarea {
+    width: 100%;
+    max-width: 450px;
+    min-height: 100px;
+    padding: 5px 7px;
+}
+
+.skp-form-field input[type=text] {
+    padding: 5px 7px;
+    height: 28px;
+}
+
+.skp-form-field.skp-in-meta-box input[type=text],
+.skp-form-field.skp-in-meta-box textarea {
+    max-width: none;
+    border: 1px solid #e1e1e1;
+}
+
+/* Select */
+.skp-form-field-select select {
+    min-width: 200px;
+}
+
+.skp-form-field-select.skp-small select {
+    min-width: 80px;
+}
+
+.skp-form-field-select *:focus {
+    outline: 0 !important;
+}
+
+.skp-form-field-select .select2-selection {
+    border-color: #fff;
+    height: 29px;
+    border-radius: 3px;
+}
+
+.skp-select2 .select2-dropdown {
+    border-color: #fff;
+}
+
+.skp-select2 .select2-dropdown li {
+    margin: 3px;
+    border-radius: 2px;
+}
+
+.skp-select2 .select2-dropdown--below {
+    top: 32px;
+    box-shadow: 0 4px 3px 2px rgba(0,0,0,0.08);
+}
+
+.skp-select2 .select2-dropdown--above {
+    box-shadow: 0 -4px 3px 2px rgba(0,0,0,0.08);
+}
+
+.skp-setting-field-select .select2-container--open {
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.08);
+}
+
+.skp-form-field-select .spinner {
+    float: none;
+    margin-top: 0;
+    margin-left: 2px;
+}
+
+/* Checkbox Switch */
+.skp-switch {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+.skp-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.skp-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+input[type=checkbox].skp-toggle-round + label {
+    padding: 3px;
+    width: 36px;
+    height: 18px;
+    background-color: #dddddd;
+    border-radius: 18px;
+    transition: background 0.4s;
+}
+input[type=checkbox].skp-toggle-round + label:before,
+input[type=checkbox].skp-toggle-round + label:after {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    content: "";
+}
+input[type=checkbox].skp-toggle-round + label:before {
+    right: 3px;
+    border-radius: 18px;
+    transition: background 0.4s;
+}
+input[type=checkbox].skp-toggle-round + label:after {
+    width: 18px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: margin 0.4s;
+}
+input[type=checkbox].skp-toggle-round:checked + label {
+    background-color: #8ce196;
+}
+input[type=checkbox].skp-toggle-round:checked + label:after {
+    margin-left: 18px;
+}
+
+/* Serial key */
+.skp-form-field.skp-form-field-product-serial .dashicons { position: relative; top: 4px; margin-left: 5px; cursor: pointer; }
+.skp-form-field.skp-form-field-product-serial .dashicons-yes { color: #27ae60; }
+.skp-form-field.skp-form-field-product-serial .dashicons-warning { color: #c0392b; }
+
+
+/**********************************************/
+/* Partial View: Plugin Page Header
+/**********************************************/
+.skp-page-header { background: rgba(52,152,219,0.75); margin-left: -20px; line-height: 56px; color: #fff; }
+.skp-page-header .skp-logo { font-family: 'Raleway'; font-weight: 700; font-size: 1.7em; padding: 0 10px 0 20px; }
+.skp-page-header .skp-logo span { font-weight: 300; }
+
+.skp-page-header nav { display: inline-block; margin-left: 50px; }
+.skp-page-header nav a { display: inline-block; color: #fff; background: rgba(255,255,255,0.20); text-decoration: none; font-size: 0.9em; line-height: 1; padding: 6px 9px; border-radius: 3px; font-weight: bold; margin: 0 5px; box-shadow: 0 0 2px 2px rgba(52,152,219,0.15); }
+.skp-page-header nav a .dashicons { font-size: 14px; height: auto; width: auto; margin-right: 5px; }
+.skp-page-header nav a:hover { background: rgba(255,255,255,0.30); }
+
+#skp-to-premium { float: right; display: inline-block; color: #fff; background: #e74c3c; text-decoration: none; font-size: 0.9em; line-height: 1; padding: 6px 9px; border-radius: 3px; font-weight: bold; margin: 16px 15px 0 0; box-shadow: 0 0 2px 2px rgba(52,152,219,0.15); }
+#skp-to-premium .dashicons { font-size: 14px; height: auto; width: auto; margin-right: 5px; }
+#skp-to-premium:hover { background: #ea6153; }
+
+
+.skp-connect-account-link {
+    display: inline-block;
+    line-height: 38px;
+    vertical-align: middle;
+    color: #838383;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 7px;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.skp-connect-account-link .skp-new {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    background: #d1d1d1;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.skp-connect-account-link .skp-new .dashicons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.skp-connect-account-link .skp-text {
+    position: relative;
+    top: 1px;
+}
+
+.skp-connect-account-link.skp-twitter:hover .skp-new {
+    background: #00abf0;
+}
+.skp-connect-account-link.skp-facebook:hover .skp-new {
+    background: #3a579a;
+}
+.skp-connect-account-link.skp-linkedin:hover .skp-new {
+    background: #0077b5;
+}
+
+.skp-connect-account-link:hover .skp-text {
+    color: #838383;
+}
+
+/**********************************************/
+/* Partial View: Platform Account
+/**********************************************/
+.skp-platform-account-entry {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skp-platform-account-entry.skp-has-name {
+    display: block;
+    margin-right: 0;
+    max-width: 200px;
+    color: #838383;
+}
+
+/* Checkbox and active/inactive states */
+.skp-platform-account-entry.skp-has-input {
+    margin-right: 5px;
+}
+.skp-platform-account-entry.skp-has-input input {
+    display: none;
+}
+.skp-platform-account-entry.skp-has-input input + label {
+    opacity: 0.45;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.skp-platform-account-entry.skp-has-input input:checked + label {
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+/* Inner */
+.skp-platform-account-entry .skp-platform-account-inner {
+    display: block;
+    padding: 7px !important;
+    margin: 0 !important;
+    cursor: default;
+    transition: opacity 0.2s ease-in-out;
+}
+.skp-platform-account-entry.skp-has-input .skp-platform-account-inner {
+    cursor: pointer;
+}
+
+/* Avatar */
+.skp-platform-account-entry .skp-platform-account-avatar {
+    position: relative;
+    display: inline-block;
+}
+.skp-platform-account-entry.skp-has-name .skp-platform-account-avatar {
+    margin-right: 10px;
+}
+.skp-platform-account-entry .skp-platform-account-avatar img {
+    width: 38px;
+    height: auto;
+    max-width: 38px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.skp-platform-account-entry .skp-platform-icon {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+}
+
+.skp-platform-account-entry .skp-platform-icon.skp-icon-twitter {
+    background: #00abf0;
+}
+.skp-platform-account-entry .skp-platform-icon.skp-icon-facebook_profile,
+.skp-platform-account-entry .skp-platform-icon.skp-icon-facebook_page {
+    background: #3a579a;
+}
+.skp-platform-account-entry .skp-platform-icon.skp-icon-linkedin_profile,
+.skp-platform-account-entry .skp-platform-icon.skp-icon-linkedin_page {
+    background: #0077b5;
+}
+
+/* Name and Platform actions */
+.skp-platform-account-entry .skp-platform-account-more {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.skp-platform-account-entry .skp-platform-account-name {
+    font-weight: bold;
+}
+
+.skp-platform-account-entry.skp-has-actions .skp-platform-account-name {
+    position: relative;
+    top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.skp-platform-account-entry:hover .skp-platform-account-name {
+    top: 1px;
+}
+
+.skp-platform-account-entry .skp-platform-account-actions {
+    position: relative;
+    top: 15px;
+    font-size: 12px;
+    font-weight: normal;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.skp-platform-account-entry:hover .skp-platform-account-actions {
+    top: 1px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.skp-platform-account-entry .skp-platform-account-actions a {
+    text-decoration: none;
+}
+
+.skp-platform-account-entry .skp-platform-account-actions a.skp-platform-account-remove {
+    color: #c0392b;
+}
+
+
+.skp-error-no-platform-accounts {
+    border:1px solid #ff2b2b;
+    background-color: #f9cccc;
+    padding: 5px 10px;
+    display:inline-block;
+    border-radius: 5px;
+}
+
+/**********************************************/
+/* Partial View: Meta Box Custom Share on Publish
+/**********************************************/
+#skp_post_custom_share_on_publish h4 {
+    margin: 1.33em 0 0.33em 0;
+}
+
+#skp_post_custom_share_on_publish .skp-switch {
+    margin-left: 0;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#skp_post_custom_share_on_publish .skp-form-field-share-on-publish {
+    padding: 1.33em 0;
+}
+
+#skp_post_custom_share_on_publish .skp-share-on-publish-custom-content {
+    display: none;
+    border-top: 1px solid #e1e1e1;
+}
+
+
+/**********************************************/
+/* Partial View: Accounts Custom Messages
+/**********************************************/
+.skp-platform-account-messages-wrapper { max-width: 550px; }
+.skp-platform-account-messages-wrapper textarea { padding: 10px; max-width: 100%; border-radius: 0; -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-bottomright: 4px; -moz-border-radius-bottomleft: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }
+
+.skp-platform-account-messages-nav-tab { display: inline-block; opacity: 0.55; transition: 0.2s all ease-in-out; }
+.skp-platform-account-messages-nav-tab:hover,
+.skp-platform-account-messages-nav-tab.skp-nav-tab-active { opacity: 1; }
+
+.skp-platform-account-messages-nav-tab .skp-platform-account-avatar { transition: 0.2s all ease-in-out; }
+.skp-platform-account-messages-nav-tab.skp-nav-tab-disabled .skp-platform-account-avatar { filter: grayscale(100%); opacity: 0.45; }
+
+.skp-platform-account-messages-nav-tab .skp-platform-account-entry { background: transparent; transition: 0.2s all ease-in-out; margin-bottom: 0; border-radius: 0; -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+.skp-platform-account-messages-nav-tab:hover .skp-platform-account-entry,
+.skp-platform-account-messages-nav-tab.skp-nav-tab-active .skp-platform-account-entry { background: #fff; }
+
+.skp-platform-account-messages-nav-tab .skp-platform-account-inner { cursor: pointer; padding-bottom: 8px !important; }
+
+.skp-platform-account-messages-nav-tab .skp-platform-account-entry .skp-platform-account-avatar img { width: 32px; max-width: 32px; }
+.skp-platform-account-messages-nav-tab .skp-platform-account-entry .skp-platform-account-avatar .skp-platform-icon { bottom: -4px; right: -4px; width: 14px; height: 14px; line-height: 14px; font-size: 8px; }
+
+.skp-platform-account-messages-tab { display: none; }
+.skp-platform-account-messages-tab.skp-tab-active { display: block; }
+
+.skp-platform-account-message-account-name { background: #fff; padding: 7px 10px; font-size: 12px; font-weight: bold; margin-bottom: 1px; }
+
+/* Custom messages in post meta-box */
+#skp_post_custom_share_on_publish .skp-platform-account-messages-wrapper { max-width: 100%; }
+
+#skp_post_custom_share_on_publish .skp-platform-account-messages-nav-tab:hover .skp-platform-account-entry,
+#skp_post_custom_share_on_publish .skp-platform-account-messages-nav-tab.skp-nav-tab-active .skp-platform-account-entry { background: #f3f3f3; }
+
+#skp_post_custom_share_on_publish .skp-platform-account-message-account-name { background: #f3f3f3; margin-bottom: 0; }
+
+
+/**********************************************/
+/* List Table: Schedules
+/**********************************************/
+.skp-wrap-revive-posts .tablenav.top {
+    height: 0;
+}
+
+.wp-list-table.skp_schedules {
+    max-width: 1200px;
+}
+
+.wp-list-table.skp_schedules th.column-name,
+.wp-list-table.skp_schedules td.column-name {
+    width: 30%;
+}
+
+.wp-list-table.skp_schedules .skp-list-table-no-items {
+    padding: 15px;
+    text-align: center;
+}
+
+.wp-list-table.skp_schedules th.column-accounts,
+.wp-list-table.skp_schedules td.column-accounts {
+    width: 20%;
+}
+
+.wp-list-table.skp_schedules .skp-platform-account-entry { margin-right: -11px; background: transparent; }
+.wp-list-table.skp_schedules .skp-platform-account-inner { padding: 0 !important; }
+.wp-list-table.skp_schedules .skp-platform-account-inner .skp-platform-icon { display: none; }
+.wp-list-table.skp_schedules .skp-platform-account-entry .skp-platform-account-avatar img { max-width: 32px; width: 32px; border: 2px solid; border-color: #fff; }
+.wp-list-table.skp_schedules.striped > tbody > :nth-child(odd) .skp-platform-account-entry .skp-platform-account-avatar img { border-color: #f9f9f9; }
+
+
+/**********************************************/
+/* Form: Schedules
+/**********************************************/
+#skp-form-schedule {
+    max-width: 825px;
+}
+
+#skp_schedule_taxonomies_ajax:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.skp-schedule-taxonomy-wrapper {
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.skp-schedule-taxonomy-wrapper h4 {
+    margin-top: 0 !important;
+}
+
+/* Weekdays */
+.skp-weekday-label {
+    padding: 6px 11px;
+    background: #d6d6d6;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.2s all ease-in-out;
+}
+
+.skp-weekday-label:hover {
+    background: #989898;
+    color: #fff;
+}
+
+input[type=checkbox].skp-weekday-checkbox:checked + label {
+    background: rgba(52,152,219,0.95);
+    color: #fff;
+}
+
+input[type=checkbox].skp-weekday-checkbox {
+    display: none;
+}
+
+/* Hours */
+.skp-posting-time {
+    margin-bottom: 5px;
+}
+
+.skp-posting-time-template {
+    display: none;
+}
+
+.skp-posting-time-remove {
+    position: relative;
+    top: 4px;
+    padding: 1px;
+    border-radius: 4px;
+    background: #d6d6d6;
+}
+
+
+/**********************************************/
+/* Page: Dashboard
+/**********************************************/
+.skp-wrap-dashboard {
+    max-width: 1200px;
+}
+
+.skp-wrap-dashboard .postbox .inner {
+    padding: 10px;
+}
+
+.skp-wrap-dashboard .postbox .inner h2 {
+    margin-top: 0.5em;
+    font-weight: normal;
+}
+
+.skp-wrap-dashboard .postbox .skp-dashboard-list-item,
+.skp-wrap-dashboard .postbox .skp-dashboard-list-item-empty {
+    line-height: 1.25;
+    border-top: 1px solid #e8e8e8;
+    padding: 10px;
+    margin: 0 -10px;
+    transition: background 0.2s ease-in-out;
+}
+
+.skp-wrap-dashboard .postbox .skp-dashboard-list-item.skp-post:hover {
+    background: #f8f8f8;
+}
+
+.skp-wrap-dashboard .postbox .skp-post a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.skp-wrap-dashboard .postbox .skp-post a:hover {
+    text-decoration: underline;
+}
+
+.skp-wrap-dashboard .postbox .skp-post-datetime {
+    display: block;
+    opacity: 0.7;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.skp-wrap-dashboard .postbox .skp-post .skp-platform-name {
+    font-weight: bold;
+}
+
+.skp-dashboard-widget-system-status label {
+    display: inline-block;
+    cursor: auto;
+    min-width: 85px;
+    vertical-align: middle;
+}
+
+.skp-dashboard-widget-system-status span {
+    vertical-align: middle;
+}
+
+.skp-dashboard-widget-system-status .dashicons {
+    border-radius: 3px;
+    color: #fff;
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+    font-size: 16px;
+}
+
+.skp-dashboard-widget-system-status .dashicons-yes {
+    background: #27ae60;
+}
+
+.skp-dashboard-widget-system-status .dashicons-no {
+    background: #e74c3c;
+}
+
+
+/**********************************************/
+/* Page: Settings
+/**********************************************/
+.skp-platform-accounts-column {
+    float: left;
+    width: 22%;
+    margin-right: 2%;
+}
+
+.skp-platform-accounts-column .skp-platform-account-entry.skp-has-name {
+    max-width: 100%;
+}
+
+#skp-tab-general-settings .form-table th,
+#skp-tab-general-settings .form-table td,
+#skp-tab-general-settings .form-table td p {
+    font-size: 13px;
+}
+
+#skp-tab-general-settings .form-table th,
+#skp-tab-general-settings .form-table td {
+    vertical-align: top;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#skp-tab-general-settings .form-table td input[type=checkbox] {
+    margin-top: -3px;
+}
+
+#skp-tab-general-settings .skp-platforms-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* On Post Publish Tab */
+.skp-settings-on-publish-post-type {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.skp-settings-on-publish-post-type-label {
+    display: inline-block;
+    min-width: 85px;
+}
+
+.skp-settings-on-publish-post-type .skp-switch {
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.skp-settings-on-publish-post-type .skp-platform-account-entry {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/**********************************************/
+/* Page: Settings
+/* Add new accounts
+/**********************************************/
+.skp-postbox-new-account-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skp-postbox-new-account-heading {
+    text-align: center;
+    margin: 2em 0 1.5em 0;
+}
+
+.skp-postbox-new-account-heading span {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.skp-postbox-new-account-heading span.skp-icon-facebook_profile {
+    background: #3a579a;
+}
+
+.skp-postbox-new-account-heading span.skp-icon-linkedin_profile {
+    background: #0077b5;
+}
+
+.skp-postbox-new-account-heading span.skp-icon-twitter {
+    background: #00abf0;
+}
+
+/* Steps */
+.skp-postbox-new-account-steps {
+    position: relative;
+    top: 1px;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+}
+
+.skp-postbox-new-account-steps:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.skp-postbox-new-account-steps li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid #c1c1c1;
+    color: #c1c1c1;
+    padding: 5px 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.skp-postbox-new-account-steps.skp-postbox-new-account-steps-twitter li {
+    width:100%;
+}
+
+.skp-postbox-new-account-steps li.skp-current,
+.skp-postbox-new-account-steps li.skp-done {
+    position: relative;
+    border-color: #0085ba;
+    color: #0085ba;
+}
+
+.skp-postbox-new-account-steps li.skp-current:after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    margin-left: -3px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+
+    border-top: 6px solid #0085ba;
+}
+
+/* Inner */
+.skp-postbox-new-account-inner {
+    padding: 35px;
+}
+
+.skp-postbox-new-account-inner input {
+    width: 100%;
+}
+
+/* Footer */
+.skp-postbox-new-account-footer {
+    padding: 20px;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+}
+
+.skp-postbox-new-account-inner:after,
+.skp-postbox-new-account-footer:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.skp-postbox-new-account-footer .button-primary {
+    float: right;
+}
+
+/* Platform Entry */
+.skp-postbox-new-account-inner .skp-platform-account-entry {
+    float: left;
+    width: 47.5%;
+    max-width: none;
+    margin-right: 2.5%;
+    box-shadow: 0 0 1px 0 #b1b1b1;
+}
+
+/**********************************************/
+/* Feedback Form
+/**********************************************/
+#skp-feedback-form-overlay { display: none; z-index: 9999; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.35; }
+#skp-feedback-form { display: none; z-index: 10000; position: fixed; top: 10%; left: 50%; background: #fff; border-radius: 3px; max-width: 700px; margin-left: -350px; width: 100%; }
+#skp-feedback-form .skp-header { position: relative; background: rgba(52,152,219,0.75); padding: 27px 35px; }
+#skp-feedback-form > form { padding: 30px 35px; }
+#skp-feedback-form h2 { color: #fff; margin-top: 0; margin-bottom: 0; }
+#skp-feedback-form label { display: block; margin-bottom: 5px; font-weight: bold; }
+#skp-feedback-form textarea { width: 100%; margin-bottom: 10px; min-height: 80px; }
+#skp-feedback-form input[type=email],
+#skp-feedback-form input[type=text] { width: 50%; margin-bottom: 10px; }
+#skp-feedback-form input[type=submit] { margin-top: 15px; }
+
+#skp-feedback-form .spinner { float: none; visibility: visible; margin-top: 19px; }
+#skp-feedback-form .skp-error { display: none; margin-top: 20px; margin-left: 15px; color: #c0392b; }
+
+#skp-feedback-done { display: none; position: relative; padding: 35px 100px; }
+#skp-feedback-done img { float: left; }
+#skp-feedback-done:after { content: ''; display: block; clear: both; }
+
+#skp-feedback-done > div { position: relative; float: left; top: -10px; margin-left: 50px; background: #f1f1f1; border-radius: 10px; padding: 10px 20px; font-weight: bold; }
+#skp-feedback-done > div p { font-size: 1.1em; }
+#skp-feedback-done > div:before { content: ''; display: block; position: absolute; left: -20px; bottom: -30px; width: 25px; height: 25px; border-radius: 50%; background: #f1f1f1; }
+#skp-feedback-done > div:after { content: ''; display: block; position: absolute; left: -40px; bottom: -40px; width: 15px; height: 15px; border-radius: 50%; background: #f1f1f1; }
+#skp-feedback-done > a { position: absolute; bottom: 35px; right: 35px; }
+
+#skp-close-feedback { position: absolute; right: 25px; top: 50%; margin-top: -10px; color: #fff; text-decoration: none; }
+
+/**********************************************/
+/* Deactivation Form
+/**********************************************/
+#skp-deactivate-modal { display: none; z-index: 9999; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.35);  }
+#skp-deactivate-inner { z-index: 10000; position: fixed; top: 10%; left: 50%; background: #fff; border-radius: 4px; max-width: 700px; margin-left: -350px; width: 100%; padding: 10px 25px 25px 25px; }
+#skp-deactivate-inner textarea,
+#skp-deactivate-inner input[type="text"] { display:none; width: 100%; }
+#skp-deactivate-inner textarea { min-height: 65px; }
+#skp-deactivate-inner .skp-deactivate-close { line-height: 26px; margin-left: 10px; }
